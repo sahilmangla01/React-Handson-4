@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Student.css"
+import { NavLink } from "react-router-dom";
 
 const Student = ()=>{
     
@@ -82,7 +83,7 @@ const Student = ()=>{
                             <div className="grid__item">{e.Age}</div>
                             <div className="grid__item">{e.Course}</div>
                             <div className="grid__item">{e.Batch}</div>
-                            <div className="grid__item">{e.change}</div>
+                            <div className="grid__item"><NavLink to="#">{e.change}</NavLink></div>
                             </div>
                             </>
                         )
